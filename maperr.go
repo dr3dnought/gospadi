@@ -9,7 +9,7 @@ func MapErr[E, T any](s []E, f MapErrFunc[E, T]) ([]T, error) {
 		if err != nil {
 			return nil, err
 		}
-    mapped[i] = n
+		mapped[i] = n
 	}
-  return mapped, nil
+	return mapped, nil
 }
